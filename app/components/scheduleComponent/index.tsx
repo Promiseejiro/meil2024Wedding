@@ -11,7 +11,7 @@ const ScheduleComponent = () => {
         className="border-b-[2px] border-gray-200 border-solid pb-4 text-black text-2xl text-center font-light"
         style={{ fontFamily: "poppins" }}
       >
-        Saturday March 30, 2024
+        Thursday Sept 12, 2024
       </h4>
       <h4
         className="p-4 text-black text-2xl text-center "
@@ -23,7 +23,7 @@ const ScheduleComponent = () => {
         className="text-gray-600 text-center "
         style={{ fontFamily: "poppins" }}
       >
-        5:00 PM
+        12:00 PM
       </h4>
 
       <Button

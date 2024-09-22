@@ -8,6 +8,7 @@ import miel from "../public/assets/miel.svg";
 import { stories, faqs } from "./data/data";
 import Title from "./components/SectionTitle";
 import ScheduleComponent from "./components/scheduleComponent";
+import Pictures from "./components/Pictures";
 export default function Home() {
   return (
     <main className="block md:flex h-screen w-full bg-[#faf8f5] md:overflow-hidden">
@@ -15,11 +16,11 @@ export default function Home() {
         <CarouselPlugin />
       </div>
       <div className="w-full md:w-[40%] md:overflow-y-scroll py-32 text-primary px-0">
-        <div className="px-4">
-          <h2 className="text-5xl text-center ">Saturday</h2>
-          <h2 className="text-5xl text-center"> June 29, 2024</h2>
-          <h3 className="text-3xl text-center py-4">Yola, Nigeria</h3>
-          <h5 className="text-center ">65 days 12 hrs 10 mins ago</h5>
+        <div className="">
+          <h2 className="text-5xl text-center ">Thursday</h2>
+          <h2 className="text-5xl text-center"> September 12, 2024</h2>
+          <h3 className="text-3xl text-center py-4">Abuja, Nigeria</h3>
+          <h5 className="text-center ">Few hours</h5>
           <div className="flex items-center justify-center mt-6">
             <Button
               variant="outline"
@@ -51,7 +52,7 @@ export default function Home() {
             </p>
           ))}
         </div>
-        <div>
+        {/* <div>
           <Title text="FAQ's" />
           {faqs.map((faq: { ques: string; ans: string }, index: number) => (
             <div key={index} className="p-4">
@@ -73,18 +74,19 @@ export default function Home() {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
         <div>
-          <Title text="Schedule" />
-          <ScheduleComponent />
-          <ScheduleComponent />
+          <Title text="Schedule"/>
+          {/* <ScheduleComponent /> */}
+          {/* <ScheduleComponent /> */}
           <ScheduleComponent />
         </div>
         <div>
           <Title text="Couples pictures" />
+          <Pictures/>
         </div>
         <div>
-          <Title text="Gifts" />
+          {/* <Title text="Gifts" /> */}
           <p
             className="p-4 md:p-6 text-lg text-black text-center"
             style={{
