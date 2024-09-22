@@ -11,7 +11,7 @@ const Pictures = () => {
         <div> <div className="grid grid-cols-2 gap-4">
             {
                 images.map((imageUrl, index) => (
-                    <Image alt="" src={imageUrl} width={50} height={50} style={{ width: "100%", height: "auto" }} unoptimized />
+                    <Image key={index} alt="" src={imageUrl} width={50} height={50} style={{ width: "100%", height: "auto" }} unoptimized />
                 ))
             }
         </div>
